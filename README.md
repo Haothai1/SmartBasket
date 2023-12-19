@@ -79,7 +79,7 @@ project_(clang++).exe | tee output.txt
 ```
 You're output should include "UPC SCAN CODE", "BRAND NAME", "ITEM DESCRIPTION", COST and the total cost of all items for each customer.
    
-    ## Example for a customer:
+## Example for a customer:
 ```plaintext
 Lucy van Pelt's shopping cart contains:
 	"00030768009670", "Sundown Naturals", "Sundown Naturals Liquid-filled Calcium 1200mg Softgels - 60 Ct", 2.12
