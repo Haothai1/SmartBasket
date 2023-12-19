@@ -8,55 +8,96 @@ Welcome to **SmartBasket**, an innovative and cutting-edge grocery inventory sys
 
 To get SmartBasket up and running on your system, follow these steps:
 
-1. Start the Application
-bash
-Copy code
+# SmartBasket Setup Guide
+
+Follow these steps to get SmartBasket up and running on your system:
+
+## 1. Start the Application
+Execute the SmartBasket application:
+```bash
 ./SmartBasket
-2. Navigating the Interface
+```
+
+## 2. Navigating the Interface
+
 Format data as follows: "UPC SCAN CODE", "BRAND NAME", "ITEM DESCRIPTION", COST
 
-Examples:
-
-plaintext
-Copy code
+### Examples:
+```plaintext
 "00035200264013", "Riceland", "Riceland American Jazmine Rice", 16.18
 "00885229000198", "Good4u", "Bev 4flvr Palt 1512pc", 7.09
-3. Setting Up the Project
+```
+
+## 3 Setting Up the Project
+
 Execute these commands in your terminal:
 
-Create a directory:
-bash
-Copy code
+### 3.1 Create a directory:
+```bash
 mkdir "C++ Grocery Root"
-Move the build.sh script:
-bash
-Copy code
+```
+
+### 3.2 Move the build.sh script
+Move the `build.sh` script into the specified directory using the following command:
+
+```bash
 mv build.sh "C++ Grocery Root"
-Navigate to the directory:
-bash
-Copy code
+```
+### 3.3 Navigate to the directory
+Change your current directory to the project directory with this command:
+
+```bash
 cd "C++ Grocery Root"
-Give execute permission to build.sh:
-bash
-Copy code
+```
+
+### 3.4 Give execute permission to build.sh
+To make the `build.sh` script executable, run the following command:
+
+```bash
 chmod +x ./Build.sh
-Run build.sh:
-bash
-Copy code
+```
+
+### 3.5 Run build.sh
+Finally, execute the `build.sh` script by running the following command:
+
+```bash
 ./Build.sh
-Directing Output:
+```
 
-To a file:
-bash
-Copy code
+## Directing Output to a file
+
+### To a file
+Direct the output of the program to a file using this command:
+
+```bash
 project_(clang++).exe > output.txt
-To both terminal and file:
-bash
-Copy code
-project_(clang++).exe | tee output.txt
+```
 
+### To both terminal and file
+```bash
+project_(clang++).exe | tee output.txt
+```
+You're output should include "UPC SCAN CODE", "BRAND NAME", "ITEM DESCRIPTION", COST and the total cost of all items for each customer.
    
-    
+    ### Example for a customer:
+```plaintext
+Lucy van Pelt's shopping cart contains:
+	"00030768009670", "Sundown Naturals", "Sundown Naturals Liquid-filled Calcium 1200mg Softgels - 60 Ct", 2.12
+	"00070327012116", "Paradise", "Pineapple Red Wedges", 16.75
+	"00072736013753", "Virginia", "Drssng Vidalia Rspbry Vngrt", 5.93
+	"00073377801839", "Earth Therapeutics", "Earth Therapeutics Sleep Mask Blue - 1 Mask", 9.95
+	"00079471102414", "Galil", "Olive Grn Manzanillo", 13.94
+	"00086449903065", "Crystal", "Crystal Body Deodorant Towelettes - 6 Towelettes", 8.39
+	"00092657016985", "Blue Q", "Blue Q Tea - Oolong With Orange - 16 Bags", 0.61
+	"00216210900003", "Applegate", "Applegate Naturals Cheddar Cheese", 23.54
+	"00710069086036", "Gefen", "Cracker Ff Herb & Grlc", 13.05
+	"00780872310185", "Castor & Pollux", "Dog Food Can Tripe Chkn A", 7.63
+	"00852697001422", "Happybaby", "Happybaby Organic Baby Food 3 Gobble Gobble  - 7+months", 5.92
+	"00885229000198", "Good4u", "Bev 4flvr Palt 1512pc", 7.09
+	-------------------------
+	Total  $114.92
+```
+
 ## 🌈 Features
 
 - **Efficient Inventory Management**: Utilizes advanced ordered associative containers for top-notch inventory tracking.
