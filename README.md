@@ -98,6 +98,8 @@ Lucy van Pelt's shopping cart contains:
 	Total  $114.92
 ```
 
+## 4.Change the "Grocery_UPC_Database-Large.dat" file to input different customer data based on the format above.
+
 ## 🌈 Features
 
 - **Efficient Inventory Management**: Utilizes advanced ordered associative containers for top-notch inventory tracking.
