@@ -81,7 +81,7 @@ You're output should include "UPC SCAN CODE", "BRAND NAME", "ITEM DESCRIPTION", 
    
 Example for a customer:
 ```plaintext
-Lucy van Pelt's shopping cart contains:
+Dwayne 'The Rock' Johnson's shopping cart contains:
 	"00030768009670", "Sundown Naturals", "Sundown Naturals Liquid-filled Calcium 1200mg Softgels - 60 Ct", 2.12
 	"00070327012116", "Paradise", "Pineapple Red Wedges", 16.75
 	"00072736013753", "Virginia", "Drssng Vidalia Rspbry Vngrt", 5.93
