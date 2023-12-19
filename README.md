@@ -22,7 +22,7 @@ Execute the SmartBasket application:
 
 Format data as follows: "UPC SCAN CODE", "BRAND NAME", "ITEM DESCRIPTION", COST
 
-### Examples:
+## Examples:
 ```plaintext
 "00035200264013", "Riceland", "Riceland American Jazmine Rice", 16.18
 "00885229000198", "Good4u", "Bev 4flvr Palt 1512pc", 7.09
@@ -32,32 +32,32 @@ Format data as follows: "UPC SCAN CODE", "BRAND NAME", "ITEM DESCRIPTION", COST
 
 Execute these commands in your terminal:
 
-### 3.1 Create a directory:
+## 3.1 Create a directory:
 ```bash
 mkdir "C++ Grocery Root"
 ```
 
-### 3.2 Move the build.sh script
+## 3.2 Move the build.sh script
 Move the `build.sh` script into the specified directory using the following command:
 
 ```bash
 mv build.sh "C++ Grocery Root"
 ```
-### 3.3 Navigate to the directory
+## 3.3 Navigate to the directory
 Change your current directory to the project directory with this command:
 
 ```bash
 cd "C++ Grocery Root"
 ```
 
-### 3.4 Give execute permission to build.sh
+## 3.4 Give execute permission to build.sh
 To make the `build.sh` script executable, run the following command:
 
 ```bash
 chmod +x ./Build.sh
 ```
 
-### 3.5 Run build.sh
+## 3.5 Run build.sh
 Finally, execute the `build.sh` script by running the following command:
 
 ```bash
@@ -66,20 +66,20 @@ Finally, execute the `build.sh` script by running the following command:
 
 ## Directing Output to a file
 
-### To a file
+## To a file
 Direct the output of the program to a file using this command:
 
 ```bash
 project_(clang++).exe > output.txt
 ```
 
-### To both terminal and file
+## To both terminal and file
 ```bash
 project_(clang++).exe | tee output.txt
 ```
 You're output should include "UPC SCAN CODE", "BRAND NAME", "ITEM DESCRIPTION", COST and the total cost of all items for each customer.
    
-    ### Example for a customer:
+    ## Example for a customer:
 ```plaintext
 Lucy van Pelt's shopping cart contains:
 	"00030768009670", "Sundown Naturals", "Sundown Naturals Liquid-filled Calcium 1200mg Softgels - 60 Ct", 2.12
