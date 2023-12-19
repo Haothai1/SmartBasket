@@ -27,31 +27,54 @@ To get SmartBasket up and running on your system, follow these steps:
 
 To use SmartBasket, follow these instructions:
 
-1. **Start the Application**
-    ```bash
-    # Example command to run the program
-    ./SmartBasket
-    ```
+1. Start the Application
+Run the program using the command below in your terminal:
 
-2. **Navigating the Interface**
-    Format the data using this format: "UPC SCAN CODE", "BRAND NAME", "ITEM DESCRIPTION", COST
-   
-    For example:
-      "00035200264013", "Riceland", "Riceland American Jazmine Rice", 16.18
-       or
-      "00885229000198", "Good4u", "Bev 4flvr Palt 1512pc", 7.09
-   
-3. In the command terminal type the following command after you have cloned the project on github:
-   1. mkdir "C++ Grocery Root"
-   2. Move the build.sh folder mv build.sh C++\ Grocery\ Root
-   3. Check if the root folder is moved to the directory by typing: ll -A
-   4. Go to into the file's directory: cd C++\ Grocery\ Root
-   5. Check if the build.sh script is in the current directory: ll -A
-   6. Give the terminal permission to execute the build.sh script: chmod +x ./Build.sh
-   7. Execute build.sh file: ./Build.sh
-   8. There should be four files in your directory: Build.sh, main.cpp, project_(clang++).exe, and project_(g++).exe
-   9. Direct your terminal output to print on an output file: project_(clang++).exe > output.txt
-      or if you want to display on both the terminal and output file type: project_(clang++).exe | tee output.txt
+bash
+Copy code
+./SmartBasket
+2. Navigating the Interface
+Enter data in the following format: "UPC SCAN CODE", "BRAND NAME", "ITEM DESCRIPTION", COST
+
+Examples:
+
+"00035200264013", "Riceland", "Riceland American Jazmine Rice", 16.18
+"00885229000198", "Good4u", "Bev 4flvr Palt 1512pc", 7.09
+3. Setting Up the Project
+Follow these steps to compile and execute the project:
+
+Create a directory:
+bash
+Copy code
+mkdir "C++ Grocery Root"
+Move the build.sh script to the new directory:
+bash
+Copy code
+mv build.sh "C++ Grocery Root"
+Navigate to the directory:
+bash
+Copy code
+cd "C++ Grocery Root"
+Give execute permission to the build.sh script:
+bash
+Copy code
+chmod +x ./Build.sh
+Run the build.sh script:
+bash
+Copy code
+./Build.sh
+Note: After executing build.sh, you should see four files in your directory: Build.sh, main.cpp, project_(clang++).exe, and project_(g++).exe.
+
+To direct terminal output to a file, use:
+
+bash
+Copy code
+project_(clang++).exe > output.txt
+Or, to display output in both the terminal and a file:
+
+bash
+Copy code
+project_(clang++).exe | tee output.txt
     
 ## 🌈 Features
 
